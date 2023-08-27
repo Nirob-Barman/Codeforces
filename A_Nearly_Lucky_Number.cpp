@@ -4,22 +4,24 @@ using namespace std;
 
 int main()
 {
-    int i, l, count = 0, x;
-    char s[20];
+    int index, length, luckyCount = 0, digit;
 
-    scanf("%s", s);
+    char input[20];
+    scanf("%s", input);
 
-    l = strlen(s);
+    length = strlen(input);
 
-    for (i = 0; i < l; i++)
+    for (index = 0; index < length; index++)
     {
-        x = s[i] - '0';
-        if (x == 4 || x == 7)
-            count++;
+        digit = input[index] - '0';
+        if (digit == 4 || digit == 7)
+            luckyCount++;
     }
-    if (count == 4 || count == 7)
+
+    if (luckyCount == 4 || luckyCount == 7)
         printf("YES\n");
     else
         printf("NO\n");
+
     return 0;
 }
