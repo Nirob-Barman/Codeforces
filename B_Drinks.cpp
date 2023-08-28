@@ -18,7 +18,7 @@ int main()
         sum += percentages[i];
     }
 
-    double averagePercentage = static_cast<double>(sum) / n;
+    double averagePercentage = (double)sum / n;
 
     printf("%.12lf\n", averagePercentage);
 
