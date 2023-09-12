@@ -20,6 +20,7 @@ int main()
     {
         long long N;
         scanf("%lld", &N);
+
         if (canReachN(1, N))
         {
             cout << "YES" << endl;
