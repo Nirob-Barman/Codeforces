@@ -32,6 +32,6 @@ int main()
             printf("Bad\n");
         }
     }
-    
+
     return 0;
 }
